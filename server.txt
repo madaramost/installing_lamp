@@ -1,0 +1,29 @@
+==========Installing a LAMP:========================
+
+1- sudo apt update
+
+2- sudo apt upgrade
+
+3- sudo apt install lamp-server^
+
+Note: don't forget (^) after lamp-server.
+
+===========Edit /etc/apache2/apache2.conf===========
+
+4- sudo nano /etc/apache2/apache2.conf
+
+then add these two line:
+
+Servername localhost
+AcceptFilter http none
+
+save and exit.
+===========Start apache server=====================
+
+5- sudo /etc/init.d/apache2 start
+
+then open your browser and enter link:
+
+6- http://localhost or http://127.0.0.1
+
+thats it.
